@@ -8,8 +8,9 @@ Kun standardbibliotek, slik at skriptet kjører likt lokalt og i skyrutinen.
   python3 scripts/collect.py --client moss --month 2026-10
   python3 scripts/collect.py --client moss --no-perf
 
-Ytelse: bruker PageSpeed Insights-API (+ CrUX-feltdata) når GOOGLE_API_KEY er satt,
-ellers lokal Lighthouse via npx hvis Chrome finnes, ellers hoppes ytelse over.
+Ytelse: bruker PageSpeed Insights-API (+ CrUX-feltdata) når GOOGLE_API_KEY er satt (eller finnes i
+~/.config/claude-seo/google-api.json), eller når SEO_USE_PSI=1 og nøkkelen legges på som network secret
+i skymiljøet. Ellers lokal Lighthouse via npx hvis Chrome finnes, ellers hoppes ytelse over.
 """
 import argparse, concurrent.futures as cf, datetime as dt, hashlib, json, os, re, shutil
 import statistics, subprocess, sys, tempfile, time, tomllib, urllib.error, urllib.parse
@@ -39,9 +40,9 @@ THIN_WORDS = 150
 
 
 # ---------------------------------------------------------------- HTTP
-def fetch(url, timeout=30, method="GET", follow=True):
+def fetch(url, timeout=30, method="GET", follow=True, headers=None):
     """Returnerer (status, final_url, headers(dict, lower), body str). Feil -> status 0."""
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "nb-NO,nb;q=0.9"},
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Language": "nb-NO,nb;q=0.9", **(headers or {})},
                                  method=method)
     opener = urllib.request.build_opener() if follow else urllib.request.build_opener(_NoRedirect)
     try:
@@ -271,9 +272,11 @@ def analyze_page(row, host):
 
 # ---------------------------------------------------------------- ytelse
 def perf_psi(url, key):
-    q = urllib.parse.urlencode({"url": url, "strategy": "mobile", "key": key,
-                                "category": "performance"})
-    st, _, _, body = fetch("https://www.googleapis.com/pagespeedonline/v5/runPagespeed?" + q, timeout=120)
+    """key=None betyr at nøkkelen legges på av en proxy (network secret i skymiljøet)."""
+    q = urllib.parse.urlencode({"url": url, "strategy": "mobile", "category": "performance"})
+    # Nøkkelen sendes som header, ikke i URL-en, slik at den ikke havner i logger
+    st, _, _, body = fetch("https://www.googleapis.com/pagespeedonline/v5/runPagespeed?" + q, timeout=120,
+                           headers={"X-goog-api-key": key} if key else None)
     if st != 200:
         return {"url": url, "source": "psi", "error": f"HTTP {st}"}
     d = json.loads(body)
@@ -547,11 +550,12 @@ def collect(cfg, month, do_perf=True, workers=4):
 
     perf = []
     if do_perf:
-        key = os.environ.get("GOOGLE_API_KEY")
+        key = os.environ.get("GOOGLE_API_KEY") or _config_key()
+        use_psi = bool(key) or os.environ.get("SEO_USE_PSI") == "1"
         for path in cfg.get("key_pages", ["/"]):
             u = urllib.parse.urljoin(final_url, path)
             print(f"[{cfg['slug']}] ytelse {u}", file=sys.stderr)
-            r = perf_psi(u, key) if key else perf_local(u)
+            r = perf_psi(u, key) if use_psi else perf_local(u)
             if r:
                 perf.append(r)
 
@@ -572,6 +576,14 @@ def collect(cfg, month, do_perf=True, workers=4):
     (d / "pages.json").write_text(json.dumps(slim, ensure_ascii=False))
     print(f"[{cfg['slug']}] score {total} {cats} -> {d.relative_to(ROOT)}", file=sys.stderr)
     return out
+
+
+def _config_key():
+    """Lokal nøkkel i ~/.config/claude-seo/google-api.json (samme fil som seo-skillene bruker)."""
+    try:
+        return json.loads((Path.home() / ".config/claude-seo/google-api.json").read_text()).get("api_key")
+    except (OSError, ValueError):
+        return None
 
 
 def load_clients():

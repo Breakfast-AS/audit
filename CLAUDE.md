@@ -28,7 +28,7 @@ De vises i dashboardet, men scoren er ikke direkte sammenlignbar med automatiske
 Kjøres av skyrutinen den 1. hver måned, eller manuelt med «kjør månedlig SEO-audit».
 
 1. `python3 scripts/collect.py --all`
-   Bruker `GOOGLE_API_KEY` for PageSpeed/CrUX hvis den er satt. Hvis en kunde feiler, fortsett med resten og nevn det i oppsummeringen.
+   PageSpeed/CrUX brukes når `GOOGLE_API_KEY` er satt, eller når `SEO_USE_PSI=1` (i skyen legges nøkkelen på som network secret for `www.googleapis.com`). Hvis en kunde feiler, fortsett med resten og nevn det i oppsummeringen.
 2. `python3 scripts/compare.py --all`
 3. For hver kunde: les `metrics.json`, `CHANGES.md` og forrige måneds `ACTION-PLAN.md`. Skriv deretter:
    - `SUMMARY.md` (maks ~40 linjer) med:

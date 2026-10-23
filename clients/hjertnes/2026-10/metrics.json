@@ -1,0 +1,380 @@
+{
+ "schema_version": 2,
+ "method": "automated",
+ "date": "2026-10-23",
+ "month": "2026-10",
+ "client": "hjertnes",
+ "url": "https://hjertnes.no/",
+ "score": 61,
+ "categories": {
+  "technical": 62,
+  "content": 56,
+  "onpage": 59,
+  "schema": 75,
+  "performance": 64,
+  "ai": 61,
+  "images": 53
+ },
+ "weights": {
+  "technical": 22,
+  "content": 23,
+  "onpage": 20,
+  "schema": 10,
+  "performance": 10,
+  "ai": 10,
+  "images": 5
+ },
+ "kpis": {
+  "pages_in_sitemap": 432,
+  "pages_crawled": 432,
+  "pages_ok": 432,
+  "non200": 0,
+  "redirects_in_sitemap": 0,
+  "noindex": 0,
+  "thin_pages": 216,
+  "median_unique_words": 150,
+  "repeated_brand_titles": 0,
+  "duplicate_titles": 20,
+  "missing_h1": 133,
+  "multiple_h1": 4,
+  "missing_meta_description": 415,
+  "missing_og_image": 166,
+  "orphan_pages": 6,
+  "event_pages": 253,
+  "event_pages_with_schema": 113,
+  "has_org_schema": true,
+  "llms_txt": false,
+  "security_headers_ok": 0,
+  "security_headers_total": 5,
+  "img_alt_coverage": 0.811,
+  "img_lazy_coverage": 0.004,
+  "img_modern_share": 0.486,
+  "avg_response_ms": 1013,
+  "home_has_h1": false,
+  "schema_types": {
+   "BreadcrumbList": 426,
+   "EntryPoint": 426,
+   "ImageObject": 426,
+   "ListItem": 426,
+   "Organization": 426,
+   "PropertyValueSpecification": 426,
+   "SearchAction": 426,
+   "WebSite": 426,
+   "ReadAction": 283,
+   "WebPage": 283,
+   "CollectionPage": 143,
+   "Event": 113,
+   "Offer": 113,
+   "Place": 113,
+   "PostalAddress": 113
+  },
+  "perf_score": 64,
+  "lcp_ms": 16651,
+  "cls": 0.002
+ },
+ "site": {
+  "final_url": "https://hjertnes.no/",
+  "status": 200,
+  "https_redirect": true,
+  "robots_found": true,
+  "robots": {
+   "crawl_delay": 10.0,
+   "ai_bots_blocked": [],
+   "all_blocked": false
+  },
+  "llms_txt": false,
+  "security_headers": {
+   "strict-transport-security": false,
+   "x-content-type-options": false,
+   "referrer-policy": false,
+   "frame-protection": false,
+   "permissions-policy": false
+  },
+  "sitemap_total": 432,
+  "server": "cloudflare",
+  "cache": "DYNAMIC"
+ },
+ "performance": [
+  {
+   "score": 64,
+   "lcp_ms": 16650.920999999995,
+   "cls": 0.002393364175448317,
+   "tbt_ms": 40.5,
+   "fcp_ms": 2071.301,
+   "si_ms": 9724.37943840312,
+   "bytes": 3819326,
+   "render_blocking_ms": 1095,
+   "offscreen_bytes": 1744462,
+   "url": "https://hjertnes.no/",
+   "source": "lighthouse-local"
+  }
+ ],
+ "issues": [
+  {
+   "id": "events_without_schema",
+   "severity": "critical",
+   "category": "schema",
+   "title": "Arrangementssider uten Event-schema",
+   "count": 140,
+   "of": 253,
+   "fix": "Generer Event-JSON-LD i malen for arrangementer.",
+   "examples": [
+    "https://hjertnes.no/kinoprogram/DXM20260478-the-social-reckoning",
+    "https://hjertnes.no/kinoprogram/DXM20260645-a-talent-for-murder",
+    "https://hjertnes.no/kinoprogram/DXM20241077-suser-avgarde",
+    "https://hjertnes.no/kinoprogram/DXM20250900-the-hunger-games-sunrise-on-the-reaping",
+    "https://hjertnes.no/kinoprogram/DXM20260517-jaevla-menn",
+    "https://hjertnes.no/kinoprogram/DXM20260160-tilbake-til-tottori",
+    "https://hjertnes.no/kinoprogram/DXM20241010-spider-man-brand-new-day",
+    "https://hjertnes.no/kinoprogram/DXM20190058-masters-of-the-universe",
+    "https://hjertnes.no/kinoprogram/DXM20260139-kjaerast",
+    "https://hjertnes.no/kinoprogram/DXM20250584-focker-in-law"
+   ]
+  },
+  {
+   "id": "lcp_poor:https://hjertnes.no/",
+   "severity": "critical",
+   "category": "performance",
+   "title": "LCP 16.7 s (mobil)",
+   "count": 1,
+   "of": 1,
+   "fix": "Mål: ≤ 2,5 s. Defer skript, lazy-load bilder, preload LCP-bilde.",
+   "examples": [
+    "https://hjertnes.no/"
+   ]
+  },
+  {
+   "id": "thin_pages",
+   "severity": "high",
+   "category": "content",
+   "title": "Tynne sider (< 150 unike ord) som er indeksert",
+   "count": 216,
+   "of": 432,
+   "fix": "Noindex tomme arkiver eller bygg ut innholdet.",
+   "examples": [
+    "https://hjertnes.no/sandefjord-kirke/",
+    "https://hjertnes.no/praktisk-informasjon/",
+    "https://hjertnes.no/utleie/sal-2/",
+    "https://hjertnes.no/praktisk-informasjon/kontakt/",
+    "https://hjertnes.no/praktisk-informasjon/kiosk/",
+    "https://hjertnes.no/om-hjertnes-kulturhus/",
+    "https://hjertnes.no/utleie/sal-3/",
+    "https://hjertnes.no/utleie/hjertnes-amfi-1/",
+    "https://hjertnes.no/utleie/foajescenen/",
+    "https://hjertnes.no/praktisk-informasjon/billettsalg/"
+   ]
+  },
+  {
+   "id": "missing_h1",
+   "severity": "high",
+   "category": "onpage",
+   "title": "Sider uten H1",
+   "count": 133,
+   "of": 432,
+   "fix": null,
+   "examples": [
+    "https://hjertnes.no/",
+    "https://hjertnes.no/arrangor/alive-entertainment-as/",
+    "https://hjertnes.no/arrangor/all-entertainment-as/",
+    "https://hjertnes.no/arrangor/all-things-live-norway-as/",
+    "https://hjertnes.no/arrangor/andeburevyen/",
+    "https://hjertnes.no/arrangor/bald-and-beautiful-production/",
+    "https://hjertnes.no/arrangor/black-lekker-og-roshnes-jazz/",
+    "https://hjertnes.no/arrangor/bluenote-sandefjord/",
+    "https://hjertnes.no/arrangor/church-floyd/",
+    "https://hjertnes.no/arrangor/den-kulturelle-vandringsstaven/"
+   ]
+  },
+  {
+   "id": "missing_meta_description",
+   "severity": "medium",
+   "category": "onpage",
+   "title": "Sider uten meta description",
+   "count": 415,
+   "of": 432,
+   "fix": null,
+   "examples": [
+    "https://hjertnes.no/program/",
+    "https://hjertnes.no/sandefjord-kirke/",
+    "https://hjertnes.no/kinoprogram/",
+    "https://hjertnes.no/kino/filmoversikt/",
+    "https://hjertnes.no/cookie-erklaering-eu/",
+    "https://hjertnes.no/personvernerklaering-eu/",
+    "https://hjertnes.no/kinokortet/",
+    "https://hjertnes.no/smatroll-i-hjertnes/",
+    "https://hjertnes.no/barnas-hjertnes/",
+    "https://hjertnes.no/minifjorden/"
+   ]
+  },
+  {
+   "id": "img_lazy",
+   "severity": "medium",
+   "category": "images",
+   "title": "Bilder under folden lastes ikke lat",
+   "count": 23,
+   "of": 432,
+   "fix": null,
+   "examples": [
+    "https://hjertnes.no/utleie/sal-1/",
+    "https://hjertnes.no/utleie/sal-2/",
+    "https://hjertnes.no/utleie/harmonie-arena/",
+    "https://hjertnes.no/om-hjertnes-kulturhus/",
+    "https://hjertnes.no/utleie/hjertnes-amfi-1/",
+    "https://hjertnes.no/gavekort/",
+    "https://hjertnes.no/minifjorden/",
+    "https://hjertnes.no/program/9307-riksteatret-1984-dub/",
+    "https://hjertnes.no/program/9160-krigen/",
+    "https://hjertnes.no/program/9434-festkonsert-vestfold-symfoniorkester-60-ar/"
+   ]
+  },
+  {
+   "id": "duplicate_titles",
+   "severity": "medium",
+   "category": "onpage",
+   "title": "Dupliserte titler",
+   "count": 20,
+   "of": 432,
+   "fix": null,
+   "examples": [
+    "https://hjertnes.no/program/9454-lordagsopera-i-hjertnes/",
+    "https://hjertnes.no/program/9364-minifjorden-2027/",
+    "https://hjertnes.no/program/9367-minifjorden-2027/",
+    "https://hjertnes.no/program/9369-minifjorden-2027/",
+    "https://hjertnes.no/program/9365-minifjorden-2027/",
+    "https://hjertnes.no/program/9368-minifjorden-2027/",
+    "https://hjertnes.no/program/9366-minifjorden-2027/",
+    "https://hjertnes.no/kinoprogram/DXM20260666-oasis-dont-look-back-in-anger",
+    "https://hjertnes.no/program/9385-lordagsopera-i-hjertnes/",
+    "https://hjertnes.no/kinoprogram/dxm20260666-oasis-dont-look-back-in-anger"
+   ]
+  },
+  {
+   "id": "canonical_elsewhere",
+   "severity": "medium",
+   "category": "technical",
+   "title": "Canonical peker til annen URL",
+   "count": 14,
+   "of": 432,
+   "fix": null,
+   "examples": [
+    "https://hjertnes.no/kinoprogram/DXM20240556-skal-hilse-fra-naturen",
+    "https://hjertnes.no/kinoprogram/DXM20250472-leva-lite",
+    "https://hjertnes.no/kinoprogram/DXM20250392-the-smashing-machine",
+    "https://hjertnes.no/kinoprogram/DXM20250441-orwell-225",
+    "https://hjertnes.no/kinoprogram/DXM20250599-keeper",
+    "https://hjertnes.no/kinoprogram/DXM20251022-they-will-kill-you",
+    "https://hjertnes.no/kinoprogram/DXM22020401-oppstigningen",
+    "https://hjertnes.no/kinoprogram/DXM26020401-the-odyssey-ikke-bruk",
+    "https://hjertnes.no/kinoprogram/DXM20250075-the-odyssey",
+    "https://hjertnes.no/kinoprogram/DXM20260512-teenage-sex-and-death-at-camp-miasma"
+   ]
+  },
+  {
+   "id": "orphan_pages",
+   "severity": "medium",
+   "category": "onpage",
+   "title": "Sider uten interne lenker inn",
+   "count": 6,
+   "of": 432,
+   "fix": null,
+   "examples": [
+    "https://hjertnes.no/playlist/pa-kino-na/",
+    "https://hjertnes.no/playlist/testliste/",
+    "https://hjertnes.no/playlist/standard/",
+    "https://hjertnes.no/playlist/tom-tester/",
+    "https://hjertnes.no/playlist/kommende-filmer/",
+    "https://hjertnes.no/playlist/kultur_saler/"
+   ]
+  },
+  {
+   "id": "security_headers",
+   "severity": "medium",
+   "category": "technical",
+   "title": "Manglende sikkerhetsheadere",
+   "count": 5,
+   "of": 5,
+   "fix": null,
+   "examples": [
+    "strict-transport-security",
+    "x-content-type-options",
+    "referrer-policy",
+    "frame-protection",
+    "permissions-policy"
+   ]
+  },
+  {
+   "id": "duplicate_content",
+   "severity": "medium",
+   "category": "content",
+   "title": "Duplisert innhold (identisk unik tekst)",
+   "count": 2,
+   "of": 432,
+   "fix": null,
+   "examples": [
+    "https://hjertnes.no/kinoprogram/DXM20260666-oasis-dont-look-back-in-anger",
+    "https://hjertnes.no/kinoprogram/dxm20260666-oasis-dont-look-back-in-anger"
+   ]
+  },
+  {
+   "id": "missing_og_image",
+   "severity": "low",
+   "category": "onpage",
+   "title": "Sider uten og:image",
+   "count": 166,
+   "of": 432,
+   "fix": null,
+   "examples": [
+    "https://hjertnes.no/",
+    "https://hjertnes.no/program/",
+    "https://hjertnes.no/kinoprogram/",
+    "https://hjertnes.no/kino/filmoversikt/",
+    "https://hjertnes.no/praktisk-informasjon/kontakt/",
+    "https://hjertnes.no/praktisk-informasjon/kiosk/",
+    "https://hjertnes.no/cookie-erklaering-eu/",
+    "https://hjertnes.no/personvernerklaering-eu/",
+    "https://hjertnes.no/praktisk-informasjon/billettsalg/",
+    "https://hjertnes.no/praktisk-informasjon/ofte-stilte-sporsmal/"
+   ]
+  },
+  {
+   "id": "multiple_h1",
+   "severity": "low",
+   "category": "onpage",
+   "title": "Sider med flere H1",
+   "count": 4,
+   "of": 432,
+   "fix": null,
+   "examples": [
+    "https://hjertnes.no/playlist/testliste/",
+    "https://hjertnes.no/playlist/standard/",
+    "https://hjertnes.no/playlist/tom-tester/",
+    "https://hjertnes.no/playlist/kultur_saler/"
+   ]
+  },
+  {
+   "id": "crawl_delay",
+   "severity": "low",
+   "category": "technical",
+   "title": "robots.txt har Crawl-delay: 10",
+   "count": 1,
+   "of": 1,
+   "fix": null,
+   "examples": [
+    "robots.txt"
+   ]
+  },
+  {
+   "id": "no_llms_txt",
+   "severity": "low",
+   "category": "ai",
+   "title": "/llms.txt mangler",
+   "count": 1,
+   "of": 1,
+   "fix": null,
+   "examples": [
+    "/llms.txt"
+   ]
+  }
+ ],
+ "sampled": false
+}

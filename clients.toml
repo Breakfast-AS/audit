@@ -1,0 +1,38 @@
+# Kunder som inngår i den månedlige SEO-auditen.
+# slug       = mappenavn under clients/
+# key_pages  = stier som får Lighthouse/PageSpeed-måling (mobil). Hold det til 2–4 per kunde.
+# event_patterns (valgfritt) = deler av URL/sitemapnavn som markerer arrangementssider (Event-schema-dekning).
+# max_pages  (valgfritt) = crawl-tak, standard 500. Over taket tas et proporsjonalt utvalg per undersitemap.
+
+[[client]]
+slug = "moss"
+name = "Moss kulturhus"
+url = "https://www.mosskulturhus.no/"
+key_pages = ["/", "/program/"]
+event_patterns = ["/event/"]
+
+[[client]]
+slug = "lillestrom-kultursenter"
+name = "Lillestrøm kultursenter"
+url = "https://www.lillestrom-kultursenter.no/"
+key_pages = ["/"]
+event_patterns = ["event-sitemap.xml"]
+
+[[client]]
+slug = "hjertnes"
+name = "Hjertnes kulturhus"
+url = "https://hjertnes.no/"
+key_pages = ["/"]
+event_patterns = ["event-sitemap.xml"]
+
+[[client]]
+slug = "drammen-scener"
+name = "Drammen scener"
+url = "https://www.drammenscener.no/"
+key_pages = ["/"]
+
+[[client]]
+slug = "breakfast"
+name = "Breakfast"
+url = "https://breakfast.no/"
+key_pages = ["/"]

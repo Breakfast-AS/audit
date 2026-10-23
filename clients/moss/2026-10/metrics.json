@@ -1,0 +1,439 @@
+{
+ "schema_version": 2,
+ "method": "automated",
+ "date": "2026-10-23",
+ "month": "2026-10",
+ "client": "moss",
+ "url": "https://www.mosskulturhus.no/",
+ "score": 46,
+ "categories": {
+  "technical": 63,
+  "content": 56,
+  "onpage": 30,
+  "schema": 20,
+  "performance": 49,
+  "ai": 41,
+  "images": 46
+ },
+ "weights": {
+  "technical": 22,
+  "content": 23,
+  "onpage": 20,
+  "schema": 10,
+  "performance": 10,
+  "ai": 10,
+  "images": 5
+ },
+ "kpis": {
+  "pages_in_sitemap": 185,
+  "pages_crawled": 185,
+  "pages_ok": 185,
+  "non200": 0,
+  "redirects_in_sitemap": 1,
+  "noindex": 0,
+  "thin_pages": 91,
+  "median_unique_words": 158,
+  "repeated_brand_titles": 185,
+  "duplicate_titles": 19,
+  "missing_h1": 71,
+  "multiple_h1": 9,
+  "missing_meta_description": 178,
+  "missing_og_image": 99,
+  "orphan_pages": 1,
+  "event_pages": 75,
+  "event_pages_with_schema": 0,
+  "has_org_schema": false,
+  "llms_txt": false,
+  "security_headers_ok": 0,
+  "security_headers_total": 5,
+  "img_alt_coverage": 0.8,
+  "img_lazy_coverage": 0.047,
+  "img_modern_share": 0.191,
+  "avg_response_ms": 97,
+  "home_has_h1": false,
+  "schema_types": {
+   "BreadcrumbList": 185,
+   "EntryPoint": 185,
+   "ListItem": 185,
+   "PropertyValueSpecification": 185,
+   "SearchAction": 185,
+   "WebSite": 185,
+   "ReadAction": 115,
+   "WebPage": 115,
+   "CollectionPage": 70,
+   "ImageObject": 15
+  },
+  "perf_score": 49,
+  "lcp_ms": 12117,
+  "cls": 1.295
+ },
+ "site": {
+  "final_url": "https://www.mosskulturhus.no/",
+  "status": 200,
+  "https_redirect": true,
+  "robots_found": true,
+  "robots": {
+   "crawl_delay": 10.0,
+   "ai_bots_blocked": [],
+   "all_blocked": false
+  },
+  "llms_txt": false,
+  "security_headers": {
+   "strict-transport-security": false,
+   "x-content-type-options": false,
+   "referrer-policy": false,
+   "frame-protection": false,
+   "permissions-policy": false
+  },
+  "sitemap_total": 185,
+  "server": "cloudflare",
+  "cache": "HIT"
+ },
+ "performance": [
+  {
+   "score": 37,
+   "lcp_ms": 12117.449999999999,
+   "cls": 1.2945130296616834,
+   "tbt_ms": 24.00000000000091,
+   "fcp_ms": 2856.278,
+   "si_ms": 9423.194793683933,
+   "bytes": 6527226,
+   "render_blocking_ms": 1277,
+   "offscreen_bytes": 4758212,
+   "url": "https://www.mosskulturhus.no/",
+   "source": "lighthouse-local"
+  },
+  {
+   "score": 61,
+   "lcp_ms": 8732.517999999998,
+   "cls": 0.00011503682719359956,
+   "tbt_ms": 37.5,
+   "fcp_ms": 2867.1270000000004,
+   "si_ms": 10760.039573398893,
+   "bytes": 5765782,
+   "render_blocking_ms": 1290,
+   "offscreen_bytes": 4696436,
+   "url": "https://www.mosskulturhus.no/program/",
+   "source": "lighthouse-local"
+  }
+ ],
+ "issues": [
+  {
+   "id": "events_without_schema",
+   "severity": "critical",
+   "category": "schema",
+   "title": "Arrangementssider uten Event-schema",
+   "count": 75,
+   "of": 75,
+   "fix": "Generer Event-JSON-LD i malen for arrangementer.",
+   "examples": [
+    "https://www.mosskulturhus.no/event/svanesjoen/",
+    "https://www.mosskulturhus.no/event/standup-testshow-med-martin-lepperod-og-nora-svenningsen/",
+    "https://www.mosskulturhus.no/event/abba-thank-you-for-the-music-mossekrakene-musikkorps/",
+    "https://www.mosskulturhus.no/event/hvem-bor-i-bekken-barnas-store-juleshow-litauisk/",
+    "https://www.mosskulturhus.no/event/nils-ingar-aadne-tenk-det/",
+    "https://www.mosskulturhus.no/event/zosjas-engel-barnas-store-juleshow-norsk/",
+    "https://www.mosskulturhus.no/event/keep-it-country-concert/",
+    "https://www.mosskulturhus.no/event/hvis-gud-vil-en-standupforestilling-av-galvan-mehidi/",
+    "https://www.mosskulturhus.no/event/festivalpass-nonstop-internasjonale-teaterfestival-2027/",
+    "https://www.mosskulturhus.no/event/lyst-pa-livet-en-kveld-med-nina-brochmann-anne-lindmo/"
+   ]
+  },
+  {
+   "id": "lcp_poor:https://www.mosskulturhus.no/",
+   "severity": "critical",
+   "category": "performance",
+   "title": "LCP 12.1 s (mobil)",
+   "count": 1,
+   "of": 1,
+   "fix": "Mål: ≤ 2,5 s. Defer skript, lazy-load bilder, preload LCP-bilde.",
+   "examples": [
+    "https://www.mosskulturhus.no/"
+   ]
+  },
+  {
+   "id": "lcp_poor:https://www.mosskulturhus.no/program/",
+   "severity": "critical",
+   "category": "performance",
+   "title": "LCP 8.7 s (mobil)",
+   "count": 1,
+   "of": 1,
+   "fix": "Mål: ≤ 2,5 s. Defer skript, lazy-load bilder, preload LCP-bilde.",
+   "examples": [
+    "https://www.mosskulturhus.no/program/"
+   ]
+  },
+  {
+   "id": "repeated_brand_title",
+   "severity": "high",
+   "category": "onpage",
+   "title": "Titler med gjentatt segment (f.eks. dobbelt merkenavn)",
+   "count": 185,
+   "of": 185,
+   "fix": "Rett tittelmalen i Yoast / temaets <title>.",
+   "examples": [
+    "https://www.mosskulturhus.no/",
+    "https://www.mosskulturhus.no/program/",
+    "https://www.mosskulturhus.no/publikum/",
+    "https://www.mosskulturhus.no/nyhetsbrev/",
+    "https://www.mosskulturhus.no/stand-up/",
+    "https://www.mosskulturhus.no/barneprogram/",
+    "https://www.mosskulturhus.no/cookieerklaering-eu/",
+    "https://www.mosskulturhus.no/ansvarsfraskrivelse/",
+    "https://www.mosskulturhus.no/ledig-stilling/",
+    "https://www.mosskulturhus.no/det-norske-blaseensemble/"
+   ]
+  },
+  {
+   "id": "thin_pages",
+   "severity": "high",
+   "category": "content",
+   "title": "Tynne sider (< 150 unike ord) som er indeksert",
+   "count": 91,
+   "of": 185,
+   "fix": "Noindex tomme arkiver eller bygg ut innholdet.",
+   "examples": [
+    "https://www.mosskulturhus.no/stand-up/",
+    "https://www.mosskulturhus.no/barneprogram/",
+    "https://www.mosskulturhus.no/cookieerklaering-eu/",
+    "https://www.mosskulturhus.no/ansvarsfraskrivelse/",
+    "https://www.mosskulturhus.no/ledig-stilling/",
+    "https://www.mosskulturhus.no/det-norske-blaseensemble/",
+    "https://www.mosskulturhus.no/ledige-stillinger/",
+    "https://www.mosskulturhus.no/ungprod/",
+    "https://www.mosskulturhus.no/opplevelseskortet/",
+    "https://www.mosskulturhus.no/praktisk-info/vergeskjema/"
+   ]
+  },
+  {
+   "id": "missing_h1",
+   "severity": "high",
+   "category": "onpage",
+   "title": "Sider uten H1",
+   "count": 71,
+   "of": 185,
+   "fix": null,
+   "examples": [
+    "https://www.mosskulturhus.no/",
+    "https://www.mosskulturhus.no/category/andre/",
+    "https://www.mosskulturhus.no/category/barn/",
+    "https://www.mosskulturhus.no/category/blues/",
+    "https://www.mosskulturhus.no/category/countrymusikk/",
+    "https://www.mosskulturhus.no/category/dans/",
+    "https://www.mosskulturhus.no/category/foredrag/",
+    "https://www.mosskulturhus.no/category/forestilling/",
+    "https://www.mosskulturhus.no/category/hyllest/",
+    "https://www.mosskulturhus.no/category/jazz/"
+   ]
+  },
+  {
+   "id": "no_org_schema",
+   "severity": "high",
+   "category": "schema",
+   "title": "Mangler Organization/LocalBusiness-schema",
+   "count": 1,
+   "of": 1,
+   "fix": null,
+   "examples": [
+    "https://www.mosskulturhus.no/"
+   ]
+  },
+  {
+   "id": "cls_poor:https://www.mosskulturhus.no/",
+   "severity": "high",
+   "category": "performance",
+   "title": "CLS 1.29 (mobil)",
+   "count": 1,
+   "of": 1,
+   "fix": "Mål: ≤ 0,1. Reserver plass til bilder og dynamisk innhold.",
+   "examples": [
+    "https://www.mosskulturhus.no/"
+   ]
+  },
+  {
+   "id": "missing_meta_description",
+   "severity": "medium",
+   "category": "onpage",
+   "title": "Sider uten meta description",
+   "count": 178,
+   "of": 185,
+   "fix": null,
+   "examples": [
+    "https://www.mosskulturhus.no/program/",
+    "https://www.mosskulturhus.no/publikum/",
+    "https://www.mosskulturhus.no/nyhetsbrev/",
+    "https://www.mosskulturhus.no/stand-up/",
+    "https://www.mosskulturhus.no/barneprogram/",
+    "https://www.mosskulturhus.no/cookieerklaering-eu/",
+    "https://www.mosskulturhus.no/ansvarsfraskrivelse/",
+    "https://www.mosskulturhus.no/ledig-stilling/",
+    "https://www.mosskulturhus.no/det-norske-blaseensemble/",
+    "https://www.mosskulturhus.no/ledige-stillinger/"
+   ]
+  },
+  {
+   "id": "img_lazy",
+   "severity": "medium",
+   "category": "images",
+   "title": "Bilder under folden lastes ikke lat",
+   "count": 131,
+   "of": 185,
+   "fix": null,
+   "examples": [
+    "https://www.mosskulturhus.no/",
+    "https://www.mosskulturhus.no/program/",
+    "https://www.mosskulturhus.no/stand-up/",
+    "https://www.mosskulturhus.no/barneprogram/",
+    "https://www.mosskulturhus.no/ledig-stilling/",
+    "https://www.mosskulturhus.no/det-norske-blaseensemble/",
+    "https://www.mosskulturhus.no/ledige-stillinger/",
+    "https://www.mosskulturhus.no/opplevelseskortet/",
+    "https://www.mosskulturhus.no/kafe-67/",
+    "https://www.mosskulturhus.no/riksteatret/"
+   ]
+  },
+  {
+   "id": "duplicate_titles",
+   "severity": "medium",
+   "category": "onpage",
+   "title": "Dupliserte titler",
+   "count": 19,
+   "of": 185,
+   "fix": null,
+   "examples": [
+    "https://www.mosskulturhus.no/publikum/",
+    "https://www.mosskulturhus.no/praktisk-info/",
+    "https://www.mosskulturhus.no/event/the-wiz-teaterkrakene-2/",
+    "https://www.mosskulturhus.no/event/the-wiz-teaterkrakene-5/",
+    "https://www.mosskulturhus.no/event/dyrene-i-hakkebakkeskogen-2/",
+    "https://www.mosskulturhus.no/event/dyrene-i-hakkebakkeskogen/",
+    "https://www.mosskulturhus.no/event/b16-in-motion/",
+    "https://www.mosskulturhus.no/event/b16-in-motion-2/",
+    "https://www.mosskulturhus.no/event/fiin-argang-pa-gyngende-grunn/",
+    "https://www.mosskulturhus.no/event/fiin-argang-pa-gyngende-grunn-2/"
+   ]
+  },
+  {
+   "id": "duplicate_content",
+   "severity": "medium",
+   "category": "content",
+   "title": "Duplisert innhold (identisk unik tekst)",
+   "count": 5,
+   "of": 185,
+   "fix": null,
+   "examples": [
+    "https://www.mosskulturhus.no/publikum/",
+    "https://www.mosskulturhus.no/praktisk-info/",
+    "https://www.mosskulturhus.no/event/the-wiz-teaterkrakene-2/",
+    "https://www.mosskulturhus.no/event/the-wiz-teaterkrakene-5/",
+    "https://www.mosskulturhus.no/event/the-wiz-teaterkrakene/"
+   ]
+  },
+  {
+   "id": "security_headers",
+   "severity": "medium",
+   "category": "technical",
+   "title": "Manglende sikkerhetsheadere",
+   "count": 5,
+   "of": 5,
+   "fix": null,
+   "examples": [
+    "strict-transport-security",
+    "x-content-type-options",
+    "referrer-policy",
+    "frame-protection",
+    "permissions-policy"
+   ]
+  },
+  {
+   "id": "redirect_in_sitemap",
+   "severity": "medium",
+   "category": "technical",
+   "title": "Redirectende URL-er i sitemap",
+   "count": 1,
+   "of": 185,
+   "fix": null,
+   "examples": [
+    "https://www.mosskulturhus.no/publikum/"
+   ]
+  },
+  {
+   "id": "orphan_pages",
+   "severity": "medium",
+   "category": "onpage",
+   "title": "Sider uten interne lenker inn",
+   "count": 1,
+   "of": 185,
+   "fix": null,
+   "examples": [
+    "https://www.mosskulturhus.no/publikum/"
+   ]
+  },
+  {
+   "id": "missing_og_image",
+   "severity": "low",
+   "category": "onpage",
+   "title": "Sider uten og:image",
+   "count": 99,
+   "of": 185,
+   "fix": null,
+   "examples": [
+    "https://www.mosskulturhus.no/",
+    "https://www.mosskulturhus.no/program/",
+    "https://www.mosskulturhus.no/nyhetsbrev/",
+    "https://www.mosskulturhus.no/stand-up/",
+    "https://www.mosskulturhus.no/barneprogram/",
+    "https://www.mosskulturhus.no/cookieerklaering-eu/",
+    "https://www.mosskulturhus.no/ansvarsfraskrivelse/",
+    "https://www.mosskulturhus.no/det-norske-blaseensemble/",
+    "https://www.mosskulturhus.no/ledige-stillinger/",
+    "https://www.mosskulturhus.no/ungprod/"
+   ]
+  },
+  {
+   "id": "multiple_h1",
+   "severity": "low",
+   "category": "onpage",
+   "title": "Sider med flere H1",
+   "count": 9,
+   "of": 185,
+   "fix": null,
+   "examples": [
+    "https://www.mosskulturhus.no/ledige-stillinger/",
+    "https://www.mosskulturhus.no/arrangorinformasjon/",
+    "https://www.mosskulturhus.no/leie/",
+    "https://www.mosskulturhus.no/viken-tattoorama/",
+    "https://www.mosskulturhus.no/christian-frederik-dagene-2024/",
+    "https://www.mosskulturhus.no/gavekort/",
+    "https://www.mosskulturhus.no/kryssover-jazzfest-moss-2026/",
+    "https://www.mosskulturhus.no/kryssover-jazzfest-moss/",
+    "https://www.mosskulturhus.no/nonstop/"
+   ]
+  },
+  {
+   "id": "crawl_delay",
+   "severity": "low",
+   "category": "technical",
+   "title": "robots.txt har Crawl-delay: 10",
+   "count": 1,
+   "of": 1,
+   "fix": null,
+   "examples": [
+    "robots.txt"
+   ]
+  },
+  {
+   "id": "no_llms_txt",
+   "severity": "low",
+   "category": "ai",
+   "title": "/llms.txt mangler",
+   "count": 1,
+   "of": 1,
+   "fix": null,
+   "examples": [
+    "/llms.txt"
+   ]
+  }
+ ],
+ "sampled": false
+}

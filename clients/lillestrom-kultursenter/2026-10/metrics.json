@@ -1,0 +1,347 @@
+{
+ "schema_version": 2,
+ "method": "automated",
+ "date": "2026-10-23",
+ "month": "2026-10",
+ "client": "lillestrom-kultursenter",
+ "url": "https://www.lillestrom-kultursenter.no/",
+ "score": 64,
+ "categories": {
+  "technical": 64,
+  "content": 66,
+  "onpage": 60,
+  "schema": 67,
+  "performance": 70,
+  "ai": 65,
+  "images": 55
+ },
+ "weights": {
+  "technical": 22,
+  "content": 23,
+  "onpage": 20,
+  "schema": 10,
+  "performance": 10,
+  "ai": 10,
+  "images": 5
+ },
+ "kpis": {
+  "pages_in_sitemap": 711,
+  "pages_crawled": 499,
+  "pages_ok": 499,
+  "non200": 0,
+  "redirects_in_sitemap": 0,
+  "noindex": 0,
+  "thin_pages": 200,
+  "median_unique_words": 220,
+  "repeated_brand_titles": 0,
+  "duplicate_titles": 6,
+  "missing_h1": 132,
+  "multiple_h1": 0,
+  "missing_meta_description": 497,
+  "missing_og_image": 164,
+  "orphan_pages": 0,
+  "event_pages": 300,
+  "event_pages_with_schema": 79,
+  "has_org_schema": true,
+  "llms_txt": false,
+  "security_headers_ok": 0,
+  "security_headers_total": 5,
+  "img_alt_coverage": 0.794,
+  "img_lazy_coverage": 0.2,
+  "img_modern_share": 0.416,
+  "avg_response_ms": 498,
+  "home_has_h1": false,
+  "schema_types": {
+   "BreadcrumbList": 499,
+   "EntryPoint": 499,
+   "ListItem": 499,
+   "PropertyValueSpecification": 499,
+   "SearchAction": 499,
+   "WebSite": 499,
+   "ReadAction": 351,
+   "WebPage": 350,
+   "CollectionPage": 148,
+   "Event": 79,
+   "Offer": 79,
+   "Organization": 79,
+   "Place": 79,
+   "PostalAddress": 79,
+   "ImageObject": 49,
+   "Person": 16,
+   "Article": 14,
+   "ProfilePage": 2,
+   "CommentAction": 1
+  },
+  "perf_score": 70,
+  "lcp_ms": 6035,
+  "cls": 0.0
+ },
+ "site": {
+  "final_url": "https://www.lillestrom-kultursenter.no/",
+  "status": 200,
+  "https_redirect": true,
+  "robots_found": true,
+  "robots": {
+   "crawl_delay": 10.0,
+   "ai_bots_blocked": [],
+   "all_blocked": false
+  },
+  "llms_txt": false,
+  "security_headers": {
+   "strict-transport-security": false,
+   "x-content-type-options": false,
+   "referrer-policy": false,
+   "frame-protection": false,
+   "permissions-policy": false
+  },
+  "sitemap_total": 711,
+  "server": "cloudflare",
+  "cache": "HIT"
+ },
+ "performance": [
+  {
+   "score": 70,
+   "lcp_ms": 6035.1165,
+   "cls": 0.0004150323858476256,
+   "tbt_ms": 30,
+   "fcp_ms": 3607.603,
+   "si_ms": 3607.603,
+   "bytes": 2255456,
+   "render_blocking_ms": 2475,
+   "offscreen_bytes": 144973,
+   "url": "https://www.lillestrom-kultursenter.no/",
+   "source": "lighthouse-local"
+  }
+ ],
+ "issues": [
+  {
+   "id": "events_without_schema",
+   "severity": "critical",
+   "category": "schema",
+   "title": "Arrangementssider uten Event-schema",
+   "count": 221,
+   "of": 300,
+   "fix": "Generer Event-JSON-LD i malen for arrangementer.",
+   "examples": [
+    "https://www.lillestrom-kultursenter.no/program/15231-jubileumskonsert-j-t-lauritsen-med-venner/",
+    "https://www.lillestrom-kultursenter.no/program/15613-musikalgalla/",
+    "https://www.lillestrom-kultursenter.no/program/15753-grease/",
+    "https://www.lillestrom-kultursenter.no/program/15920-don-giovanni/",
+    "https://www.lillestrom-kultursenter.no/program/15921-macbeth/",
+    "https://www.lillestrom-kultursenter.no/program/16027-jokke-og-valentinerne-repeteres/",
+    "https://www.lillestrom-kultursenter.no/program/18134-tora-trio/",
+    "https://www.lillestrom-kultursenter.no/program/16164-asle-beck/",
+    "https://www.lillestrom-kultursenter.no/program/16178-snohvit/",
+    "https://www.lillestrom-kultursenter.no/program/18135-1816/"
+   ]
+  },
+  {
+   "id": "lcp_poor:https://www.lillestrom-kultursenter.no/",
+   "severity": "critical",
+   "category": "performance",
+   "title": "LCP 6.0 s (mobil)",
+   "count": 1,
+   "of": 1,
+   "fix": "Mål: ≤ 2,5 s. Defer skript, lazy-load bilder, preload LCP-bilde.",
+   "examples": [
+    "https://www.lillestrom-kultursenter.no/"
+   ]
+  },
+  {
+   "id": "thin_pages",
+   "severity": "high",
+   "category": "content",
+   "title": "Tynne sider (< 150 unike ord) som er indeksert",
+   "count": 200,
+   "of": 499,
+   "fix": "Noindex tomme arkiver eller bygg ut innholdet.",
+   "examples": [
+    "https://www.lillestrom-kultursenter.no/artikler/",
+    "https://www.lillestrom-kultursenter.no/onsker-du-a-stromme-et-arrangement/",
+    "https://www.lillestrom-kultursenter.no/lillestromkonferansen-2025/",
+    "https://www.lillestrom-kultursenter.no/se-bildene-fra-provene-til-musikalen-alice-i-vidunderland/",
+    "https://www.lillestrom-kultursenter.no/juleskurken-se-bilder-fra-provene/",
+    "https://www.lillestrom-kultursenter.no/bilder-fra-provene-the-sound-of-music/",
+    "https://www.lillestrom-kultursenter.no/shrek-the-musical-se-bilder-fra-provene/",
+    "https://www.lillestrom-kultursenter.no/smittevern/",
+    "https://www.lillestrom-kultursenter.no/utleie/",
+    "https://www.lillestrom-kultursenter.no/om-oss/eierforhold/"
+   ]
+  },
+  {
+   "id": "missing_h1",
+   "severity": "high",
+   "category": "onpage",
+   "title": "Sider uten H1",
+   "count": 132,
+   "of": 499,
+   "fix": null,
+   "examples": [
+    "https://www.lillestrom-kultursenter.no/",
+    "https://www.lillestrom-kultursenter.no/category/uncategorized/",
+    "https://www.lillestrom-kultursenter.no/tag/kulturkafe/",
+    "https://www.lillestrom-kultursenter.no/arrangor/action-teater/",
+    "https://www.lillestrom-kultursenter.no/arrangor/ahus-revy-1/",
+    "https://www.lillestrom-kultursenter.no/arrangor/akershus-musikkrad/",
+    "https://www.lillestrom-kultursenter.no/arrangor/all-entertainment-as/",
+    "https://www.lillestrom-kultursenter.no/arrangor/all-things-live-norway-as/",
+    "https://www.lillestrom-kultursenter.no/arrangor/aller-media-as/",
+    "https://www.lillestrom-kultursenter.no/arrangor/amanda-claire-murano/"
+   ]
+  },
+  {
+   "id": "missing_meta_description",
+   "severity": "medium",
+   "category": "onpage",
+   "title": "Sider uten meta description",
+   "count": 497,
+   "of": 499,
+   "fix": null,
+   "examples": [
+    "https://www.lillestrom-kultursenter.no/artikler/",
+    "https://www.lillestrom-kultursenter.no/det-har-vaert-et-eventyr/",
+    "https://www.lillestrom-kultursenter.no/onsker-du-a-stromme-et-arrangement/",
+    "https://www.lillestrom-kultursenter.no/det-er-var-oppgave-og-vi-gjor-det-med-glede/",
+    "https://www.lillestrom-kultursenter.no/vi-er-sammen-i-kampen-om-a-dra-folk-ut-av-sofaen/",
+    "https://www.lillestrom-kultursenter.no/vil-du-ha-en-scene-a-sta-pa/",
+    "https://www.lillestrom-kultursenter.no/gront-apent-og-innbydende/",
+    "https://www.lillestrom-kultursenter.no/lillestromkonferansen-2025/",
+    "https://www.lillestrom-kultursenter.no/billett-bonanza-i-lillestrom/",
+    "https://www.lillestrom-kultursenter.no/se-bildene-fra-provene-til-musikalen-alice-i-vidunderland/"
+   ]
+  },
+  {
+   "id": "img_lazy",
+   "severity": "medium",
+   "category": "images",
+   "title": "Bilder under folden lastes ikke lat",
+   "count": 331,
+   "of": 499,
+   "fix": null,
+   "examples": [
+    "https://www.lillestrom-kultursenter.no/det-har-vaert-et-eventyr/",
+    "https://www.lillestrom-kultursenter.no/det-er-var-oppgave-og-vi-gjor-det-med-glede/",
+    "https://www.lillestrom-kultursenter.no/vi-er-sammen-i-kampen-om-a-dra-folk-ut-av-sofaen/",
+    "https://www.lillestrom-kultursenter.no/gront-apent-og-innbydende/",
+    "https://www.lillestrom-kultursenter.no/lillestromkonferansen-2025/",
+    "https://www.lillestrom-kultursenter.no/billett-bonanza-i-lillestrom/",
+    "https://www.lillestrom-kultursenter.no/se-bildene-fra-provene-til-musikalen-alice-i-vidunderland/",
+    "https://www.lillestrom-kultursenter.no/juleskurken-se-bilder-fra-provene/",
+    "https://www.lillestrom-kultursenter.no/bilder-fra-provene-the-sound-of-music/",
+    "https://www.lillestrom-kultursenter.no/100-ar-med-kultur-bli-med-pa-feiringen/"
+   ]
+  },
+  {
+   "id": "img_alt",
+   "severity": "medium",
+   "category": "images",
+   "title": "Innholdsbilder uten alt-tekst",
+   "count": 45,
+   "of": 499,
+   "fix": null,
+   "examples": [
+    "https://www.lillestrom-kultursenter.no/det-har-vaert-et-eventyr/",
+    "https://www.lillestrom-kultursenter.no/det-er-var-oppgave-og-vi-gjor-det-med-glede/",
+    "https://www.lillestrom-kultursenter.no/vi-er-sammen-i-kampen-om-a-dra-folk-ut-av-sofaen/",
+    "https://www.lillestrom-kultursenter.no/gront-apent-og-innbydende/",
+    "https://www.lillestrom-kultursenter.no/lillestromkonferansen-2025/",
+    "https://www.lillestrom-kultursenter.no/billett-bonanza-i-lillestrom/",
+    "https://www.lillestrom-kultursenter.no/se-bildene-fra-provene-til-musikalen-alice-i-vidunderland/",
+    "https://www.lillestrom-kultursenter.no/juleskurken-se-bilder-fra-provene/",
+    "https://www.lillestrom-kultursenter.no/bilder-fra-provene-the-sound-of-music/",
+    "https://www.lillestrom-kultursenter.no/100-ar-med-kultur-bli-med-pa-feiringen/"
+   ]
+  },
+  {
+   "id": "duplicate_titles",
+   "severity": "medium",
+   "category": "onpage",
+   "title": "Dupliserte titler",
+   "count": 6,
+   "of": 499,
+   "fix": null,
+   "examples": [
+    "https://www.lillestrom-kultursenter.no/program/15723-christmas-with-nordic-tenors/",
+    "https://www.lillestrom-kultursenter.no/program/17289-christmas-with-nordic-tenors/",
+    "https://www.lillestrom-kultursenter.no/arrangor/frogner-kultursenter/",
+    "https://www.lillestrom-kultursenter.no/arrangor/lillestrom-kultursenter/",
+    "https://www.lillestrom-kultursenter.no/scene/frogner-kultursenter/",
+    "https://www.lillestrom-kultursenter.no/spillested/lillestrom-kultursenter/"
+   ]
+  },
+  {
+   "id": "security_headers",
+   "severity": "medium",
+   "category": "technical",
+   "title": "Manglende sikkerhetsheadere",
+   "count": 5,
+   "of": 5,
+   "fix": null,
+   "examples": [
+    "strict-transport-security",
+    "x-content-type-options",
+    "referrer-policy",
+    "frame-protection",
+    "permissions-policy"
+   ]
+  },
+  {
+   "id": "canonical_elsewhere",
+   "severity": "medium",
+   "category": "technical",
+   "title": "Canonical peker til annen URL",
+   "count": 1,
+   "of": 499,
+   "fix": null,
+   "examples": [
+    "https://www.lillestrom-kultursenter.no/program/17299-myten-om-det-friske-mennesket/"
+   ]
+  },
+  {
+   "id": "missing_og_image",
+   "severity": "low",
+   "category": "onpage",
+   "title": "Sider uten og:image",
+   "count": 164,
+   "of": 499,
+   "fix": null,
+   "examples": [
+    "https://www.lillestrom-kultursenter.no/artikler/",
+    "https://www.lillestrom-kultursenter.no/personvernerklaering-eu/",
+    "https://www.lillestrom-kultursenter.no/cookieerklaering-eu/",
+    "https://www.lillestrom-kultursenter.no/smittevern/",
+    "https://www.lillestrom-kultursenter.no/utleie/",
+    "https://www.lillestrom-kultursenter.no/om-oss/eierforhold/",
+    "https://www.lillestrom-kultursenter.no/ansatt/handlingsplan/",
+    "https://www.lillestrom-kultursenter.no/internt/handlingsplan/",
+    "https://www.lillestrom-kultursenter.no/internt/arsberetninger/",
+    "https://www.lillestrom-kultursenter.no/kontakt-oss/"
+   ]
+  },
+  {
+   "id": "crawl_delay",
+   "severity": "low",
+   "category": "technical",
+   "title": "robots.txt har Crawl-delay: 10",
+   "count": 1,
+   "of": 1,
+   "fix": null,
+   "examples": [
+    "robots.txt"
+   ]
+  },
+  {
+   "id": "no_llms_txt",
+   "severity": "low",
+   "category": "ai",
+   "title": "/llms.txt mangler",
+   "count": 1,
+   "of": 1,
+   "fix": null,
+   "examples": [
+    "/llms.txt"
+   ]
+  }
+ ],
+ "sampled": true
+}

@@ -1,0 +1,382 @@
+{
+ "schema_version": 2,
+ "method": "automated",
+ "date": "2026-10-23",
+ "month": "2026-10",
+ "client": "breakfast",
+ "url": "https://breakfast.no/",
+ "score": 47,
+ "categories": {
+  "technical": 61,
+  "content": 38,
+  "onpage": 64,
+  "schema": 24,
+  "performance": 61,
+  "ai": 32,
+  "images": 7
+ },
+ "weights": {
+  "technical": 22,
+  "content": 23,
+  "onpage": 20,
+  "schema": 10,
+  "performance": 10,
+  "ai": 10,
+  "images": 5
+ },
+ "kpis": {
+  "pages_in_sitemap": 267,
+  "pages_crawled": 267,
+  "pages_ok": 266,
+  "non200": 1,
+  "redirects_in_sitemap": 0,
+  "noindex": 0,
+  "thin_pages": 163,
+  "median_unique_words": 14,
+  "repeated_brand_titles": 0,
+  "duplicate_titles": 10,
+  "missing_h1": 35,
+  "multiple_h1": 2,
+  "missing_meta_description": 247,
+  "missing_og_image": 95,
+  "orphan_pages": 104,
+  "event_pages": 0,
+  "event_pages_with_schema": 0,
+  "has_org_schema": false,
+  "llms_txt": false,
+  "security_headers_ok": 0,
+  "security_headers_total": 5,
+  "img_alt_coverage": 0.04,
+  "img_lazy_coverage": 0.151,
+  "img_modern_share": 0.05,
+  "avg_response_ms": 5788,
+  "home_has_h1": true,
+  "schema_types": {
+   "EntryPoint": 266,
+   "PropertyValueSpecification": 266,
+   "SearchAction": 266,
+   "WebSite": 266,
+   "BreadcrumbList": 265,
+   "ListItem": 265,
+   "ReadAction": 256,
+   "WebPage": 256,
+   "ImageObject": 180,
+   "Article": 11,
+   "Person": 11,
+   "CollectionPage": 10
+  },
+  "perf_score": 61,
+  "lcp_ms": 6894,
+  "cls": 0.009
+ },
+ "site": {
+  "final_url": "https://breakfast.no/",
+  "status": 200,
+  "https_redirect": true,
+  "robots_found": true,
+  "robots": {
+   "crawl_delay": 10.0,
+   "ai_bots_blocked": [],
+   "all_blocked": false
+  },
+  "llms_txt": false,
+  "security_headers": {
+   "strict-transport-security": false,
+   "x-content-type-options": false,
+   "referrer-policy": false,
+   "frame-protection": false,
+   "permissions-policy": false
+  },
+  "sitemap_total": 267,
+  "server": "nginx",
+  "cache": "HIT: 2"
+ },
+ "performance": [
+  {
+   "score": 61,
+   "lcp_ms": 6893.929000000001,
+   "cls": 0.009432302577047105,
+   "tbt_ms": 63.5,
+   "fcp_ms": 3006.7120000000004,
+   "si_ms": 19943.195153913086,
+   "bytes": 21593616,
+   "render_blocking_ms": 1760,
+   "offscreen_bytes": 0,
+   "url": "https://breakfast.no/",
+   "source": "lighthouse-local"
+  }
+ ],
+ "issues": [
+  {
+   "id": "lcp_poor:https://breakfast.no/",
+   "severity": "critical",
+   "category": "performance",
+   "title": "LCP 6.9 s (mobil)",
+   "count": 1,
+   "of": 1,
+   "fix": "Mål: ≤ 2,5 s. Defer skript, lazy-load bilder, preload LCP-bilde.",
+   "examples": [
+    "https://breakfast.no/"
+   ]
+  },
+  {
+   "id": "thin_pages",
+   "severity": "high",
+   "category": "content",
+   "title": "Tynne sider (< 150 unike ord) som er indeksert",
+   "count": 163,
+   "of": 266,
+   "fix": "Noindex tomme arkiver eller bygg ut innholdet.",
+   "examples": [
+    "https://breakfast.no/divi-login-designer/",
+    "https://breakfast.no/entercore-font/",
+    "https://breakfast.no/dashboard/",
+    "https://breakfast.no/ansatte/rasmus-nielsen/",
+    "https://breakfast.no/ansatte/marita-saeterli-kihle/",
+    "https://breakfast.no/ansatte/dag-stian-mykjaland/",
+    "https://breakfast.no/ansatte/linn-marie-corneliussen/",
+    "https://breakfast.no/ansatte/tina-mathisen-odden/",
+    "https://breakfast.no/ansatte/marie-myrer/",
+    "https://breakfast.no/ansatte/jonathan-aglen/"
+   ]
+  },
+  {
+   "id": "no_org_schema",
+   "severity": "high",
+   "category": "schema",
+   "title": "Mangler Organization/LocalBusiness-schema",
+   "count": 1,
+   "of": 1,
+   "fix": null,
+   "examples": [
+    "https://breakfast.no/"
+   ]
+  },
+  {
+   "id": "non200_in_sitemap",
+   "severity": "high",
+   "category": "technical",
+   "title": "URL-er i sitemap som ikke svarer 200",
+   "count": 1,
+   "of": 267,
+   "fix": null,
+   "examples": [
+    "https://breakfast.no/jobber/hytter-med-ly-i-lende/"
+   ]
+  },
+  {
+   "id": "img_alt",
+   "severity": "medium",
+   "category": "images",
+   "title": "Innholdsbilder uten alt-tekst",
+   "count": 265,
+   "of": 266,
+   "fix": null,
+   "examples": [
+    "https://breakfast.no/nyhet-breakfast-vinner-anbudet-for-ebehandling/",
+    "https://breakfast.no/nyhet-vi-vant-anbudet-for-vestfoldmuseene/",
+    "https://breakfast.no/publikum-strommer-til-kulturhusene-til-jul/",
+    "https://breakfast.no/tid-for-tiktok/",
+    "https://breakfast.no/cutters-skrur-opp-kundeopplevelsen-med-nrj-visuell-helhet-levert-av-breakfast/",
+    "https://breakfast.no/visuelt-uttrykk-for-noen-av-norges-mest-populaere-podkaster/",
+    "https://breakfast.no/rekordar-for-ibsenhuset-i-2025/",
+    "https://breakfast.no/breakfast-fyller-15-ar/",
+    "https://breakfast.no/arbe-mestring-i-fellesskap/",
+    "https://breakfast.no/nye-nettsider-for-kilden-teater-og-konserthus/"
+   ]
+  },
+  {
+   "id": "missing_meta_description",
+   "severity": "medium",
+   "category": "onpage",
+   "title": "Sider uten meta description",
+   "count": 247,
+   "of": 266,
+   "fix": null,
+   "examples": [
+    "https://breakfast.no/nyhet-breakfast-vinner-anbudet-for-ebehandling/",
+    "https://breakfast.no/nyhet-vi-vant-anbudet-for-vestfoldmuseene/",
+    "https://breakfast.no/cutters-skrur-opp-kundeopplevelsen-med-nrj-visuell-helhet-levert-av-breakfast/",
+    "https://breakfast.no/visuelt-uttrykk-for-noen-av-norges-mest-populaere-podkaster/",
+    "https://breakfast.no/arbe-mestring-i-fellesskap/",
+    "https://breakfast.no/nye-nettsider-for-kilden-teater-og-konserthus/",
+    "https://breakfast.no/bluesen-lever-videre-pa-notodden/",
+    "https://breakfast.no/divi-login-designer/",
+    "https://breakfast.no/personvern-og-cookies/",
+    "https://breakfast.no/markedsavdeling-pa-lan/"
+   ]
+  },
+  {
+   "id": "orphan_pages",
+   "severity": "medium",
+   "category": "onpage",
+   "title": "Sider uten interne lenker inn",
+   "count": 104,
+   "of": 266,
+   "fix": null,
+   "examples": [
+    "https://breakfast.no/tid-for-tiktok/",
+    "https://breakfast.no/divi-login-designer/",
+    "https://breakfast.no/entercore-font/",
+    "https://breakfast.no/frokost-dagens-viktigste-maltid/",
+    "https://breakfast.no/dashboard/",
+    "https://breakfast.no/stillinger/",
+    "https://breakfast.no/ansatte/rasmus-nielsen/",
+    "https://breakfast.no/ansatte/marita-saeterli-kihle/",
+    "https://breakfast.no/ansatte/dag-stian-mykjaland/",
+    "https://breakfast.no/ansatte/linn-marie-corneliussen/"
+   ]
+  },
+  {
+   "id": "img_lazy",
+   "severity": "medium",
+   "category": "images",
+   "title": "Bilder under folden lastes ikke lat",
+   "count": 99,
+   "of": 266,
+   "fix": null,
+   "examples": [
+    "https://breakfast.no/",
+    "https://breakfast.no/markedsavdeling-pa-lan/",
+    "https://breakfast.no/kultur/museum-gallerier/",
+    "https://breakfast.no/kultur/radio-podkast/",
+    "https://breakfast.no/kultur/festivaler-og-arrangementer/",
+    "https://breakfast.no/kultur/kulturapp/",
+    "https://breakfast.no/nyhetsbrev/",
+    "https://breakfast.no/miljotiltak/",
+    "https://breakfast.no/kultur/utsolgt/",
+    "https://breakfast.no/jobber/"
+   ]
+  },
+  {
+   "id": "missing_h1",
+   "severity": "medium",
+   "category": "onpage",
+   "title": "Sider uten H1",
+   "count": 35,
+   "of": 266,
+   "fix": null,
+   "examples": [
+    "https://breakfast.no/entercore-font/",
+    "https://breakfast.no/nyhetsbrev/",
+    "https://breakfast.no/dashboard/",
+    "https://breakfast.no/aktuelle-nyheter/",
+    "https://breakfast.no/om-oss/",
+    "https://breakfast.no/kultur/utsolgt/",
+    "https://breakfast.no/jobber/",
+    "https://breakfast.no/ansatte/rasmus-nielsen/",
+    "https://breakfast.no/ansatte/marita-saeterli-kihle/",
+    "https://breakfast.no/ansatte/dag-stian-mykjaland/"
+   ]
+  },
+  {
+   "id": "duplicate_titles",
+   "severity": "medium",
+   "category": "onpage",
+   "title": "Dupliserte titler",
+   "count": 10,
+   "of": 266,
+   "fix": null,
+   "examples": [
+    "https://breakfast.no/kunder/easy-ad/",
+    "https://breakfast.no/kunder/visma-exso/",
+    "https://breakfast.no/kunder/vow/",
+    "https://breakfast.no/kunder/treprosjekt/",
+    "https://breakfast.no/kunder/din-kompetanse/",
+    "https://breakfast.no/jobber/film-til-visma-exso/",
+    "https://breakfast.no/jobber/easyad/",
+    "https://breakfast.no/jobber/din-kompetanse/",
+    "https://breakfast.no/jobber/vow-asa/",
+    "https://breakfast.no/jobber/treprosjekt/"
+   ]
+  },
+  {
+   "id": "security_headers",
+   "severity": "medium",
+   "category": "technical",
+   "title": "Manglende sikkerhetsheadere",
+   "count": 5,
+   "of": 5,
+   "fix": null,
+   "examples": [
+    "strict-transport-security",
+    "x-content-type-options",
+    "referrer-policy",
+    "frame-protection",
+    "permissions-policy"
+   ]
+  },
+  {
+   "id": "duplicate_content",
+   "severity": "medium",
+   "category": "content",
+   "title": "Duplisert innhold (identisk unik tekst)",
+   "count": 2,
+   "of": 266,
+   "fix": null,
+   "examples": [
+    "https://breakfast.no/casekategori/design/",
+    "https://breakfast.no/casekategori/webdesign/"
+   ]
+  },
+  {
+   "id": "missing_og_image",
+   "severity": "low",
+   "category": "onpage",
+   "title": "Sider uten og:image",
+   "count": 95,
+   "of": 266,
+   "fix": null,
+   "examples": [
+    "https://breakfast.no/",
+    "https://breakfast.no/divi-login-designer/",
+    "https://breakfast.no/personvern-og-cookies/",
+    "https://breakfast.no/kultur/museum-gallerier/",
+    "https://breakfast.no/arskavalkade-dnbe/",
+    "https://breakfast.no/kultur/radio-podkast/",
+    "https://breakfast.no/entercore-font/",
+    "https://breakfast.no/breakfast-oker-satsingen-pa-kultur-og-underholdning/",
+    "https://breakfast.no/kultur/festivaler-og-arrangementer/",
+    "https://breakfast.no/kultur/kulturapp/"
+   ]
+  },
+  {
+   "id": "multiple_h1",
+   "severity": "low",
+   "category": "onpage",
+   "title": "Sider med flere H1",
+   "count": 2,
+   "of": 266,
+   "fix": null,
+   "examples": [
+    "https://breakfast.no/",
+    "https://breakfast.no/arskavalkade-dnbe/"
+   ]
+  },
+  {
+   "id": "crawl_delay",
+   "severity": "low",
+   "category": "technical",
+   "title": "robots.txt har Crawl-delay: 10",
+   "count": 1,
+   "of": 1,
+   "fix": null,
+   "examples": [
+    "robots.txt"
+   ]
+  },
+  {
+   "id": "no_llms_txt",
+   "severity": "low",
+   "category": "ai",
+   "title": "/llms.txt mangler",
+   "count": 1,
+   "of": 1,
+   "fix": null,
+   "examples": [
+    "/llms.txt"
+   ]
+  }
+ ],
+ "sampled": false
+}

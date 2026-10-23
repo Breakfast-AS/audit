@@ -1,0 +1,301 @@
+{
+ "schema_version": 2,
+ "method": "automated",
+ "date": "2026-10-23",
+ "month": "2026-10",
+ "client": "drammen-scener",
+ "url": "https://www.drammenscener.no/",
+ "score": 60,
+ "categories": {
+  "technical": 65,
+  "content": 65,
+  "onpage": 77,
+  "schema": 10,
+  "performance": 65,
+  "ai": 67,
+  "images": 27
+ },
+ "weights": {
+  "technical": 22,
+  "content": 23,
+  "onpage": 20,
+  "schema": 10,
+  "performance": 10,
+  "ai": 10,
+  "images": 5
+ },
+ "kpis": {
+  "pages_in_sitemap": 36,
+  "pages_crawled": 36,
+  "pages_ok": 36,
+  "non200": 0,
+  "redirects_in_sitemap": 0,
+  "noindex": 0,
+  "thin_pages": 13,
+  "median_unique_words": 190,
+  "repeated_brand_titles": 0,
+  "duplicate_titles": 0,
+  "missing_h1": 7,
+  "multiple_h1": 5,
+  "missing_meta_description": 14,
+  "missing_og_image": 17,
+  "orphan_pages": 0,
+  "event_pages": 0,
+  "event_pages_with_schema": 0,
+  "has_org_schema": false,
+  "llms_txt": true,
+  "security_headers_ok": 0,
+  "security_headers_total": 5,
+  "img_alt_coverage": 0.514,
+  "img_lazy_coverage": 0.0,
+  "img_modern_share": 0.064,
+  "avg_response_ms": 2619,
+  "home_has_h1": true,
+  "schema_types": {
+   "EntryPoint": 36,
+   "PropertyValueSpecification": 36,
+   "SearchAction": 36,
+   "WebSite": 36,
+   "ReadAction": 28,
+   "WebPage": 28,
+   "ImageObject": 23,
+   "BreadcrumbList": 16,
+   "ListItem": 16,
+   "CollectionPage": 8
+  },
+  "perf_score": 65,
+  "lcp_ms": 7672,
+  "cls": 0.001
+ },
+ "site": {
+  "final_url": "https://www.drammenscener.no/",
+  "status": 200,
+  "https_redirect": true,
+  "robots_found": true,
+  "robots": {
+   "crawl_delay": 10.0,
+   "ai_bots_blocked": [],
+   "all_blocked": false
+  },
+  "llms_txt": true,
+  "security_headers": {
+   "strict-transport-security": false,
+   "x-content-type-options": false,
+   "referrer-policy": false,
+   "frame-protection": false,
+   "permissions-policy": false
+  },
+  "sitemap_total": 36,
+  "server": "cloudflare",
+  "cache": "HIT"
+ },
+ "performance": [
+  {
+   "score": 65,
+   "lcp_ms": 7672.052,
+   "cls": 0.000649070695835858,
+   "tbt_ms": 73.5,
+   "fcp_ms": 3480.626,
+   "si_ms": 4979.36348413379,
+   "bytes": 24796647,
+   "render_blocking_ms": 2523,
+   "offscreen_bytes": 1346942,
+   "url": "https://www.drammenscener.no/",
+   "source": "lighthouse-local"
+  }
+ ],
+ "issues": [
+  {
+   "id": "lcp_poor:https://www.drammenscener.no/",
+   "severity": "critical",
+   "category": "performance",
+   "title": "LCP 7.7 s (mobil)",
+   "count": 1,
+   "of": 1,
+   "fix": "Mål: ≤ 2,5 s. Defer skript, lazy-load bilder, preload LCP-bilde.",
+   "examples": [
+    "https://www.drammenscener.no/"
+   ]
+  },
+  {
+   "id": "thin_pages",
+   "severity": "high",
+   "category": "content",
+   "title": "Tynne sider (< 150 unike ord) som er indeksert",
+   "count": 13,
+   "of": 36,
+   "fix": "Noindex tomme arkiver eller bygg ut innholdet.",
+   "examples": [
+    "https://www.drammenscener.no/jobb/",
+    "https://www.drammenscener.no/tilgjengelighet/",
+    "https://www.drammenscener.no/om-oss/",
+    "https://www.drammenscener.no/kontakt-oss/",
+    "https://www.drammenscener.no/pakker/",
+    "https://www.drammenscener.no/saler/centralen/",
+    "https://www.drammenscener.no/saler/hovedscenen-pa-drammens-teater/",
+    "https://www.drammenscener.no/department/daglig-leder/",
+    "https://www.drammenscener.no/department/drift/",
+    "https://www.drammenscener.no/department/event-konferanse/"
+   ]
+  },
+  {
+   "id": "no_org_schema",
+   "severity": "high",
+   "category": "schema",
+   "title": "Mangler Organization/LocalBusiness-schema",
+   "count": 1,
+   "of": 1,
+   "fix": null,
+   "examples": [
+    "https://www.drammenscener.no/"
+   ]
+  },
+  {
+   "id": "img_alt",
+   "severity": "medium",
+   "category": "images",
+   "title": "Innholdsbilder uten alt-tekst",
+   "count": 36,
+   "of": 36,
+   "fix": null,
+   "examples": [
+    "https://www.drammenscener.no/",
+    "https://www.drammenscener.no/konferanser/",
+    "https://www.drammenscener.no/jobb/",
+    "https://www.drammenscener.no/tilgjengelighet/",
+    "https://www.drammenscener.no/historie/",
+    "https://www.drammenscener.no/om-oss/",
+    "https://www.drammenscener.no/kontakt-oss/",
+    "https://www.drammenscener.no/eventer/",
+    "https://www.drammenscener.no/sceneutleie/",
+    "https://www.drammenscener.no/meny/"
+   ]
+  },
+  {
+   "id": "img_lazy",
+   "severity": "medium",
+   "category": "images",
+   "title": "Bilder under folden lastes ikke lat",
+   "count": 36,
+   "of": 36,
+   "fix": null,
+   "examples": [
+    "https://www.drammenscener.no/",
+    "https://www.drammenscener.no/konferanser/",
+    "https://www.drammenscener.no/jobb/",
+    "https://www.drammenscener.no/tilgjengelighet/",
+    "https://www.drammenscener.no/historie/",
+    "https://www.drammenscener.no/om-oss/",
+    "https://www.drammenscener.no/kontakt-oss/",
+    "https://www.drammenscener.no/eventer/",
+    "https://www.drammenscener.no/sceneutleie/",
+    "https://www.drammenscener.no/meny/"
+   ]
+  },
+  {
+   "id": "missing_meta_description",
+   "severity": "medium",
+   "category": "onpage",
+   "title": "Sider uten meta description",
+   "count": 14,
+   "of": 36,
+   "fix": null,
+   "examples": [
+    "https://www.drammenscener.no/konferanser/",
+    "https://www.drammenscener.no/historie/",
+    "https://www.drammenscener.no/om-oss/",
+    "https://www.drammenscener.no/eventer/",
+    "https://www.drammenscener.no/sceneutleie/",
+    "https://www.drammenscener.no/bli-med-pa-folkefest/",
+    "https://www.drammenscener.no/pakker/",
+    "https://www.drammenscener.no/saler/",
+    "https://www.drammenscener.no/department/daglig-leder/",
+    "https://www.drammenscener.no/department/drift/"
+   ]
+  },
+  {
+   "id": "missing_h1",
+   "severity": "medium",
+   "category": "onpage",
+   "title": "Sider uten H1",
+   "count": 7,
+   "of": 36,
+   "fix": null,
+   "examples": [
+    "https://www.drammenscener.no/pakker/konferansepakke/",
+    "https://www.drammenscener.no/department/daglig-leder/",
+    "https://www.drammenscener.no/department/drift/",
+    "https://www.drammenscener.no/department/event-konferanse/",
+    "https://www.drammenscener.no/department/marked-program/",
+    "https://www.drammenscener.no/department/okonomi/",
+    "https://www.drammenscener.no/department/teknisk/"
+   ]
+  },
+  {
+   "id": "security_headers",
+   "severity": "medium",
+   "category": "technical",
+   "title": "Manglende sikkerhetsheadere",
+   "count": 5,
+   "of": 5,
+   "fix": null,
+   "examples": [
+    "strict-transport-security",
+    "x-content-type-options",
+    "referrer-policy",
+    "frame-protection",
+    "permissions-policy"
+   ]
+  },
+  {
+   "id": "missing_og_image",
+   "severity": "low",
+   "category": "onpage",
+   "title": "Sider uten og:image",
+   "count": 17,
+   "of": 36,
+   "fix": null,
+   "examples": [
+    "https://www.drammenscener.no/konferanser/",
+    "https://www.drammenscener.no/jobb/",
+    "https://www.drammenscener.no/tilgjengelighet/",
+    "https://www.drammenscener.no/historie/",
+    "https://www.drammenscener.no/kontakt-oss/",
+    "https://www.drammenscener.no/eventer/",
+    "https://www.drammenscener.no/sceneutleie/",
+    "https://www.drammenscener.no/meny/",
+    "https://www.drammenscener.no/transport/",
+    "https://www.drammenscener.no/pakker/"
+   ]
+  },
+  {
+   "id": "multiple_h1",
+   "severity": "low",
+   "category": "onpage",
+   "title": "Sider med flere H1",
+   "count": 5,
+   "of": 36,
+   "fix": null,
+   "examples": [
+    "https://www.drammenscener.no/",
+    "https://www.drammenscener.no/konferanser/",
+    "https://www.drammenscener.no/eventer/",
+    "https://www.drammenscener.no/sceneutleie/",
+    "https://www.drammenscener.no/pakker/messe/"
+   ]
+  },
+  {
+   "id": "crawl_delay",
+   "severity": "low",
+   "category": "technical",
+   "title": "robots.txt har Crawl-delay: 10",
+   "count": 1,
+   "of": 1,
+   "fix": null,
+   "examples": [
+    "robots.txt"
+   ]
+  }
+ ],
+ "sampled": false
+}

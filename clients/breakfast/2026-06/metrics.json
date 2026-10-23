@@ -1,0 +1,17 @@
+{
+ "schema_version": 1,
+ "method": "manual",
+ "date": "2026-06-01",
+ "month": "2026-06",
+ "note": "Manuell audit (skjønnsbasert score). Ikke direkte sammenlignbar med automatisk målte måneder.",
+ "score": 40,
+ "categories": {
+  "technical": 53,
+  "content": 36,
+  "onpage": 40,
+  "schema": 28,
+  "performance": 45,
+  "ai": 25,
+  "images": 15
+ }
+}
